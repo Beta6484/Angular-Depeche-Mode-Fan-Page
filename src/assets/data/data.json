@@ -1,0 +1,61 @@
+{
+  "carousel": [
+      {
+         "img": "assets/images/DMO72864_720x.jpg",
+         "title": "Some great reward black babydoll",
+         "price": "$35.00",
+         "link": "https://depechemodeshop.com/collections/featured/products/some-great-reward-black-babydoll"
+      },
+      {
+         "img": "assets/images/DMO75047_720x.jpg",
+         "title": "Master & servant t-shirt",
+         "price": "$35.00",
+         "link": "https://depechemodeshop.com/collections/featured/products/master-servant-t-shirt"
+      },
+      {
+         "img": "assets/images/DMO75049_720x.jpg",
+         "title": "Construction time again babydoll",
+         "price": "$35.00",
+         "link": "https://depechemodeshop.com/collections/featured/products/construction-time-again-babydoll"
+      },
+      {
+         "img": "assets/images/DMO80635_720x.jpg",
+         "title": "Cover me black t-shirt",
+         "price": "$35.00",
+         "link": "https://depechemodeshop.com/collections/featured/products/cover-me-black-t-shirt"
+      },
+      {
+         "img": "assets/images/DMO80640_720x.jpg",
+         "title": "Violator black babydoll",
+         "price": "$35.00",
+         "link": "https://depechemodeshop.com/collections/featured/products/violator-black-babydoll"
+      }
+   ],
+   "schedule": [
+      {
+         "date": "March 26th, 2017",
+         "local": "BBC Radio 6 Music Festival (Barrowland Ballroom), Glasgow, Scotland",
+         "description": "Pre-tour show. Opening Act: James Lavelle (UNKLE) (DJ set)"
+      },
+      {
+         "date": "March 23rd, 2017",
+         "local": "Baselworld, Basel, Switzerland",
+         "description": "Pre-tour show"
+      },
+      {
+         "date": "March 21st, 2017",
+         "local": "Studios Rive Gauche, RTL2, Paris, France",
+         "description": "Pre-tour concert for radio"
+      },
+      {
+         "date": "March 17th, 2017",
+         "local": "Funkhaus Nalepastraße (Telekom Street Gigs), Berlin, Germany",
+         "description": "Pre-tour show"
+      },
+      {
+         "date": "March 6th, 2017",
+         "local": "Sony Studios, New York, NY",
+         "description": "Pre-tour rehearsal for fans"
+      }
+   ]
+}

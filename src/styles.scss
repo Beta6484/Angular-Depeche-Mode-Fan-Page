@@ -1,1 +1,72 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    color: #dddddd;
+}
+
+a {
+    color: #E10202;
+    transition: .3s;
+    &:hover {
+        color: #850a0a;
+        text-decoration: none;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 10px;
+}
+
+.dm-social {
+    a {
+        margin: 0 1rem;
+        &:hover {
+            opacity: .6;
+        }
+    }
+    .site {
+        color: white;
+    }
+    .facebook {
+        color: #1877f2;
+    }
+    .twitter {
+        color: #1da1f2;
+    }
+    .instagram {
+        color: #c32aa3;
+    }
+    .tumblr {
+        color: #35465d;
+    }
+    .youtube {
+        color: #ff0000;
+    }
+}
+
+.btn-dm {
+    background-color: #E10202;
+    color: #dddddd;
+    border-radius: 0;
+    transition: .3s;
+    &:hover {
+        background-color: #850a0a;
+        color: #b3adad;
+    }
+}

@@ -1,0 +1,89 @@
+.dm-carousel-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    .dm-carousel-inner {
+        position: relative;
+        width: 100%;
+        list-style: none;
+        margin: 0;
+        padding: 100% 0 0;
+        .dm-carousel-item {
+            display: flex;
+            order: 1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            height: auto;
+            will-change: opacity;
+            transition: opacity .3s;
+            pointer-events: none;
+            .content {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                padding: .4rem .8rem;
+                background-color: rgba(0,0,0,.8);
+                .price {
+                    margin: .4rem 0 .8rem;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    color: #E10202;
+                }
+            }
+            &.selected {
+                opacity: 1;
+                transition: 1s;
+                order: 0;
+                pointer-events: visible;
+            }
+        }
+    }
+    .dm-carousel-nav {
+        position: absolute;
+        background-color: transparent;
+        color: black;
+        border: none;
+        &.left {
+            font-size: 2rem;
+            top: calc(50% - 1rem);
+            left: .2rem;
+            &:hover, &:focus {
+                outline: none !important;
+                box-shadow: none !important;
+            }
+        }
+        &.right {
+            font-size: 2rem;
+            top: calc(50% - 1rem);
+            right: .2rem;
+            &:hover, &:focus {
+                outline: none !important;
+                box-shadow: none !important;
+            }
+        }
+        &.dot {
+            width: 100%;
+            text-align: center;
+            top: 0;
+            .carousel-dot {
+                background-color: black;
+                color: #dddddd;
+                border-radius: 50%;
+                border: none;
+                font-size: .6rem;
+                margin: 0 .4rem;
+                &:hover, &:focus {
+                    outline: none !important;
+                    box-shadow: none !important;
+                }
+                &.selected {
+                    color: #E10202;
+                    font-weight: bolder;
+                }
+            }
+        }
+    }
+}

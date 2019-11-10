@@ -1,0 +1,10 @@
+<accordion class="schedule" [isAnimated]="true" [closeOthers]="true">
+    <accordion-group *ngFor="let i of sheduleArray" [heading]="i.date">
+        <p>
+            <strong>Local:</strong> {{ i.local }}
+        </p>
+        <p>
+            <strong>Description:</strong> {{ i.description }}
+        </p>
+    </accordion-group>
+</accordion>

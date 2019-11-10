@@ -1,0 +1,21 @@
+<div class="dm-carousel-container">
+    <ul class="dm-carousel-inner">
+        <li class="dm-carousel-item" *ngFor="let i of carouselArray; let select = index" [ngClass]="{ 'selected': select == selectedIndex }">
+            <img class="img-fluid" [src]="i.img"  [alt]="i.title" [title]="i.title">
+            <div class="content">
+                <div class="title">{{ i.title }}</div>
+                <div class="price">{{ i.price }}</div>
+                <a class="btn btn-dm w-100" [href]="i.link" target="_blank" rel="noopener noreferrer">Buy Now!</a>
+            </div>
+        </li>
+    </ul>
+    <button class="dm-carousel-nav left" type="button" title="Previous product" (click)="itemSelected(selectedIndex - 1, 'left')">
+        <i class="fas fa-angle-left"></i>
+    </button>
+    <button class="dm-carousel-nav right" type="button" title="Next product" (click)="itemSelected(selectedIndex + 1, 'right')">
+        <i class="fas fa-angle-right"></i>
+    </button>
+    <div class="dm-carousel-nav dot">
+        <button class="carousel-dot" [ngClass]="{ 'selected': x == selectedIndex }" *ngFor="let i of carouselArray; let x = index" title="Product nº {{ x + 1 }}" (click)="itemSelected(x, 'none')">{{x + 1}}</button>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+.schedule {
+    .card {
+        background-color: rgba(#E10202, .1);
+        .card-header {
+            padding: .2rem .4rem;
+            .accordion-toggle {
+                .btn {
+                    color: #dddddd;
+                    text-decoration: none;
+                    transition: .3s;
+                    &:hover {
+                        color: #dddddd;
+                        text-decoration: none;
+                    }
+                    &::before {
+                        content: '\f0da';
+                        display: inline-block;
+                        margin-right: .4rem;
+                        font-family: "FontAwesome";
+                        font-style: normal;
+                        font-variant: normal;
+                        text-rendering: auto;
+                        -webkit-font-smoothing: antialiased;
+                    }
+                }
+            } 
+        }
+        .card-body {
+            background-color: black;
+            border: solid 1px rgba(#E10202, .1);
+        }
+    }
+    .panel-open {
+        .card {
+            .card-header {
+                .accordion-toggle {
+                    .btn {
+                        &::before {
+                            content: "\f0d7";
+                        }
+                    }
+                } 
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.top-bar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    top: -52px;
+    margin-bottom: -52px;
+    background-image: url('../../../../assets/images/dm-banner.jpeg');
+    height: 320px;
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .banner-strip {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .top-bar {
+        height: 520px;
+        .banner-strip {
+            width: 40%;
+        }
+    }
+}

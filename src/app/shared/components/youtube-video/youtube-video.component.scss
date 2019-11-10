@@ -1,0 +1,10 @@
+.youtube-video {
+    width: 100%;
+    height: auto;
+    iframe {
+        position: absolute;
+        top: 0;
+        width: calc(100% - 30px);
+        height: 100%;
+    }
+}
